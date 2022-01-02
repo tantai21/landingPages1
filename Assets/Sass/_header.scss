@@ -1,0 +1,54 @@
+.app {
+  margin: auto;
+  max-width: 1202px;
+
+  .headerr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background: $white-color;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-56px);
+    transition: 0.3s linear;
+    &.active {
+      transform: translateY(0rem);
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      text-transform: uppercase;
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 60px;
+        li {
+          a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $text-heading-color;
+            text-decoration: none;
+          }
+        }
+      }
+      .login-btn {
+        text-transform: uppercase;
+        background: transparent;
+        color: $button-color;
+        border: 2px solid;
+        border-radius: 6px;
+        padding: 7px 41px;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+}

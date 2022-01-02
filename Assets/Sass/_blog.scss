@@ -1,0 +1,42 @@
+#blog {
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(180deg, #c3dfed 0%, #dff0f7 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 97px;
+
+  .content {
+    margin: auto;
+
+    h2 {
+      font-weight: 600;
+      font-size: 54px;
+      max-width: 365px;
+      margin: auto;
+
+      line-height: 1.3;
+      margin-bottom: 33px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 22px;
+      color: #585981;
+      max-width: 470px;
+      margin-bottom: 37px;
+    }
+    a {
+      padding: 7px 42px;
+      background: $button-color;
+      font-size: 20px;
+      font-weight: 600;
+      border-radius: 20px;
+      letter-spacing: 2px;
+      color: $white-color;
+      text-decoration: none;
+    }
+  }
+}

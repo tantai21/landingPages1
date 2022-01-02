@@ -1,0 +1,95 @@
+.warper {
+  background: url("../Images/BannerImage.png") no-repeat;
+  min-height: 663px;
+  padding-left: 89px;
+  padding-top: 92px;
+  border-radius: 50px;
+  border-bottom-right-radius: 90px;
+  margin-top: 10px;
+  margin-bottom: 103px;
+  .content {
+    max-width: 490px;
+    h1 {
+      font-size: 56px;
+      line-height: 73px;
+    }
+    p {
+      font-size: 22px;
+      margin-top: 39px;
+      line-height: 36px;
+    }
+  }
+  .searchBar {
+    margin-top: 62px;
+    max-width: 918px;
+    .search-tab {
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding-left: 0;
+        margin: 0;
+
+        li {
+          &:first-child {
+            background: $white-color;
+          }
+
+          padding: 3px 29px 10px 29px;
+          border-radius: 20px 20px 0 0;
+
+          a {
+            color: $text-heading-color;
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+          }
+          &:first-child a {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .search-types {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(
+        to right,
+        rgb(255, 255, 255),
+        rgba(255, 255, 255, 0.808)
+      );
+      backdrop-filter: blur(20px);
+      min-height: 120px;
+      border-radius: 0 20px 20px 20px;
+      padding-left: 29px;
+      .group {
+        margin-right: 20px;
+        line-height: 1.8;
+        & ~ .group {
+          padding-left: 35px;
+          border-left: 2px solid #dcdceb;
+        }
+
+        .content-icon {
+          display: flex;
+          align-items: center;
+          gap: 49px;
+          h3 {
+            font-weight: 600;
+            font-size: 38px;
+          }
+          span {
+            font-weight: 400;
+            color: $button-buy-color;
+          }
+        }
+      }
+    }
+    .search-btn {
+      margin-left: 70px;
+      padding: 18px;
+      background: $button-color;
+      border-radius: 20px;
+    }
+  }
+}
